@@ -7,6 +7,7 @@ let weatherSummary = document.querySelector('.weather-summary')
 let input = document.getElementById('fname');
 let city;
 let searchBtn = document.querySelector('.search-btn')
+let d = new Date()
 
 
 
@@ -17,7 +18,7 @@ function displayWeatherData(data){
   <div class="weather-forecast-info">
     <h3 id="weather-location" class="color">${data.name}</h3>
     <p id="weather-time" class="color">
-      10:36 - Tuesday, 22 Oct 2019<br />What a sunny day !
+      ${d.getHours()}:${d.getMinutes()} - ${d.toDateString()}
     </p>
   </div>
 `
