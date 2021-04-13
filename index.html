@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>The Weather</title>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles.css" />
+    
+
   </head>
 
   <body>
@@ -19,7 +21,7 @@
         <img src="./balloon.png" id="img" alt="balloon" />
         <!-- Weather Info -->
         <div class="weather-info">
-          <h2 id="weather-temp" class="color">26<sup>o</sup></h2>
+          <h2 id="weather-temp" class="color">25<sup>o</sup></h2>
           <div class="weather-forecast-info">
             <h3 id="weather-location" class="color">London</h3>
             <p id="weather-time" class="color">
@@ -40,20 +42,12 @@
               type="text"
               id="fname"
               name="fname"
-              placeholder="Another Location"
+              placeholder="Enter a city"
             />
-            <button id="search-btn">
+            <button class="search-btn">
               Search
             </button>
           </div>
-
-          <hr class="underline" />
-          <ul class="location-names">
-            <li>New Delhi</li>
-            <li>New Delhi</li>
-            <li>New Delhi</li>
-            <li>New Delhi</li>
-          </ul>
         </div>
         <hr class="underline" />
 
@@ -72,12 +66,9 @@
 
           <div class="weather-summary-info">
             <h4>Wind</h4>
-            <p class="color">1km/h</p>
+            <p class="color">1 miles/hr</p>
           </div>
 
-          <div class="weather-summary-info">
-            <h4>Rain</h4>
-            <p class="color">0mm</p>
           </div>
         </div>
       </div>

@@ -64,6 +64,8 @@ body {
   outline: none;
   margin: 3rem;
   margin-bottom: 0;
+  font-weight: 500;
+  color: white;
 }
 
 input::placeholder {
@@ -72,13 +74,20 @@ input::placeholder {
   font-size: 0.8rem;
 }
 
+input[type=text]:focus {
+  border: none;
+  border-color: transparent;
+  background: transparent;
+  outline: none;
+}
+
 .underline {
   display: inline-block;
   margin-left: 3em;
   width: 60%;
 }
 
-#search-btn {
+.search-btn {
   background: transparent;
   border: none;
   outline: none;
@@ -97,6 +106,7 @@ input::placeholder {
 
 .weather-summary {
   margin: 3rem;
+  margin-top:9rem;
 }
 
 .weather-summary h3 {
